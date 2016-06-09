@@ -16,6 +16,7 @@
 		B34A522C1D06D6B400088C6D /* FontsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A522B1D06D6B400088C6D /* FontsUITests.m */; };
 		B34A523B1D06D74D00088C6D /* FavoritesList.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A523A1D06D74D00088C6D /* FavoritesList.m */; };
 		B34A523E1D07187C00088C6D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A523D1D07187C00088C6D /* RootViewController.m */; };
+		B34A52411D09616D00088C6D /* FontListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A52401D09616D00088C6D /* FontListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B34A523A1D06D74D00088C6D /* FavoritesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesList.m; sourceTree = "<group>"; };
 		B34A523C1D07187C00088C6D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		B34A523D1D07187C00088C6D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B34A523F1D09616D00088C6D /* FontListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontListViewController.h; sourceTree = "<group>"; };
+		B34A52401D09616D00088C6D /* FontListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				B34A520F1D06D6B300088C6D /* Main.storyboard */,
 				B34A523C1D07187C00088C6D /* RootViewController.h */,
 				B34A523D1D07187C00088C6D /* RootViewController.m */,
+				B34A523F1D09616D00088C6D /* FontListViewController.h */,
+				B34A52401D09616D00088C6D /* FontListViewController.m */,
 				B34A52391D06D74D00088C6D /* FavoritesList.h */,
 				B34A523A1D06D74D00088C6D /* FavoritesList.m */,
 				B34A52121D06D6B300088C6D /* Assets.xcassets */,
@@ -282,6 +287,7 @@
 				B34A520B1D06D6B300088C6D /* AppDelegate.m in Sources */,
 				B34A523E1D07187C00088C6D /* RootViewController.m in Sources */,
 				B34A52081D06D6B300088C6D /* main.m in Sources */,
+				B34A52411D09616D00088C6D /* FontListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +513,7 @@
 				B34A52321D06D6B400088C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B34A52331D06D6B400088C6D /* Build configuration list for PBXNativeTarget "FontsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +522,7 @@
 				B34A52351D06D6B400088C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B34A52361D06D6B400088C6D /* Build configuration list for PBXNativeTarget "FontsUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +531,7 @@
 				B34A52381D06D6B400088C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

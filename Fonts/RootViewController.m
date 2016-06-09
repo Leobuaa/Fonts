@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "FavoritesList.h"
+#import "FontListViewController.h"
 
 @interface RootViewController ()
 
@@ -134,14 +135,26 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    FontListViewController *listVC = segue.destinationViewController;
+    
+    if (indexPath.section == 0) {
+        NSString *familyName = self.familyNames[indexPath.row];
+        listVC.fontNames = [[UIFont fontNamesForFamilyName:familyName] sortedArrayUsingSelector:@selector(compare:)];
+        listVC.navigationItem.title = familyName;
+        listVC.showsFavorites = NO;
+    } else {
+        listVC.fontNames = self.favoritesList.favorites;
+        listVC.navigationItem.title = @"Favorites";
+        listVC.showsFavorites = YES;
+    }
 }
-*/
 
 @end
