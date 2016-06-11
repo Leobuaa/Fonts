@@ -27,6 +27,10 @@
     
     UIFont *preferredTableViewFont = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
     self.cellPointSize = preferredTableViewFont.pointSize;
+    
+    if (self.showsFavorites) {
+        self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,11 +89,12 @@
     }
 }
 
-/*
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    [[FavoritesList sharedFavoritesList] moveItemAtIndex:fromIndexPath.row toIndex:toIndexPath.row];
+    self.fontNames = [FavoritesList sharedFavoritesList].favorites;
 }
-*/
+
 
 /*
 // Override to support conditional rearranging of the table view.
